@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Adoreu</title>
+</head>
+
+<body>
+    <header>
+        <h1>Feirinha Adoreu</h1>
+        <p>Praça Santa Terezinha - Centro<br> 10 de Março 2023</br></p>
+    </header>
+
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome</label>
+                <input type="text" name="nome">
+            </div>
+            <div>
+                <label>Data de Nascimento</label>
+                <input type="date" name="data">
+            </div>
+        </fieldset>
+
+        <div>
+            <label>E-mail</label>
+            <input type="text" name="email">
+        </div>
+
+        <div>
+            <label>Como conheceu a Adoreu?</label>
+            <label>
+                <input type="radio" name="redesocial" value="instagram">Instagram
+            </label>
+            <label>
+                <input type="radio" name="redesocial" value="facebook">Facebook
+            </label>
+            <label>
+                <input type="radio" name="redesocial" value="google">Google
+            </label>
+            <label>
+                <input type="radio" name="redesocial" value="outro">Outro
+            </label>
+        </div>
+        <div>
+            <label>Já adquiriu alguma peça da Adoreu?</label>
+            <select>
+                <option>Sim</option>
+                <option>Não</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Caso quiser, deixe um feedback sobre a Adoreu ♥</label>
+            <textarea>Area de texto com um texto inicial dentro</textarea>
+        </div>
+
+        <button type="submit">Confirmar Presença</button>
+    </form>
+</body>
+
+</html>
