@@ -7,48 +7,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Página Inicial</title>
   <link rel="shortcut icon" href="./assets/logo site.ico" type="image/x-icon">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
   <header>
-    <div>
-      <a href="index.html"><img src="/assets/logo site.png" /></a>
-      <nav>
-        <a href="/index.html">Página Inicial</a>
-        <a href="/pecas.html">Peças</a>
-        <a href="/local.html">Local</a>
+    <div class="topo">
+      <a href="index.html"><img class="logo" src="/assets/logo site.png" /></a>
+      <nav id="nav">
+        <ul id="menu">
+          <li><a href="/index.html">Página Inicial</a></li>
+          <li><a href="/pecas.html">Peças</a></li>
+          <li><a href="/local.html">Local</a></li>
+        </ul>
       </nav>
     </div>
-    <img src="./assets/Você & Eu (7).png" alt="fotoadoreu" />
+    <img class="banner" src="./assets/Você & Eu (7).png" alt="fotoadoreu" />
   </header>
 
   <main>
-    <section>
+    <section class="evento">
       <h1>Feirinha Adoreu</h1>
       <h2>10 de março</h2>
       <p>Confirme a sua presença aqui ♥</p>
       <a href="/formulario.html">
-        <button>Confirmar presença ♥</button>
+        <button class="botao">Confirmar presença ♥</button>
       </a>
     </section>
-    <section>
-      <h3>
-        Chama as amigues para a feirinha Adoreu com peças feitos à mão, com
-        muitor amor e carinho ♥
-      </h3>
+    <section class="video">
+      <h3> Chama as amigues para a feirinha Adoreu</h3>
+      <p>com peças feitos à mão, com amor e carinho ♥</p>
       <video src="./assets/Snapinsta.app_178930363_1017751539052939_2958797863938979725_n.mp4" width="560" height="315"
         controls></video>
     </section>
   </main>
-  <div>
+  <div class="local">
     <h3>Local</h3>
     <p>Praça Santa Terezinha - Centro - Taubaté/SP</p>
     <a href="https://www.instagram.com/adoreu.intimate/">
-      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-icon id="icone" name="logo-instagram"></ion-icon>
     </a>
   </div>
-  <footer>Feito com ♥ pela Paloma</footer>
+  <footer>Feito com ♡ pela Paloma</footer>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
 </body>
 
 </html>

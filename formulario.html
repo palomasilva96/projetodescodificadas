@@ -1,66 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="formulario.css">
     <title>Formulário Adoreu</title>
 </head>
 
 <body>
-    <header>
+
+    <header class="formulario">
         <h1>Feirinha Adoreu</h1>
         <p>Praça Santa Terezinha - Centro<br> 10 de Março 2023</br></p>
     </header>
+    <div class="container">
+        <form>
+            <fieldset>
+                <div class="nome">
+                    <label>Nome</label>
+                    <input type="text" name="nome" required>
+                </div>
+                <div class="nascimento">
+                    <label>Data de Nascimento</label>
+                    <input type="date" name="data" required>
+                </div>
+            </fieldset>
 
-    <form>
-        <fieldset>
-            <div>
-                <label>Nome</label>
-                <input type="text" name="nome">
+            <div class="email">
+                <label>E-mail</label>
+                <input type="email" name="email" required>
             </div>
-            <div>
-                <label>Data de Nascimento</label>
-                <input type="date" name="data">
+
+            <div class="redesocial">
+                <label>Como conheceu a Adoreu?</label>
+                <label>
+                    <input type="radio" name="redesocial" value="instagram" required>Instagram
+                </label>
+                <label>
+                    <input type="radio" name="redesocial" value="facebook" required>Facebook
+                </label>
+                <label>
+                    <input type="radio" name="redesocial" value="google" required>Google
+                </label>
+                <label>
+                    <input type="radio" name="redesocial" value="outro" required>Outro
+                </label>
             </div>
-        </fieldset>
+            <div class="opcao">
+                <label>Já adquiriu alguma peça da Adoreu?</label>
+                <select>
+                    <option>Sim</option>
+                    <option>Não</option>
+                </select>
+            </div>
 
-        <div>
-            <label>E-mail</label>
-            <input type="text" name="email">
-        </div>
+            <div class="feedback">
+                <label>Caso quiser, deixe um feedback sobre a Adoreu ♥</label>
+                <textarea>Area de texto com um texto inicial dentro</textarea>
+            </div>
 
-        <div>
-            <label>Como conheceu a Adoreu?</label>
-            <label>
-                <input type="radio" name="redesocial" value="instagram">Instagram
-            </label>
-            <label>
-                <input type="radio" name="redesocial" value="facebook">Facebook
-            </label>
-            <label>
-                <input type="radio" name="redesocial" value="google">Google
-            </label>
-            <label>
-                <input type="radio" name="redesocial" value="outro">Outro
-            </label>
-        </div>
-        <div>
-            <label>Já adquiriu alguma peça da Adoreu?</label>
-            <select>
-                <option>Sim</option>
-                <option>Não</option>
-            </select>
-        </div>
-
-        <div>
-            <label>Caso quiser, deixe um feedback sobre a Adoreu ♥</label>
-            <textarea>Area de texto com um texto inicial dentro</textarea>
-        </div>
-
-        <button type="submit">Confirmar Presença</button>
-    </form>
+            <button type="submit">Confirmar Presença</button>
+        </form>
+    </div>
 </body>
+
 
 </html>

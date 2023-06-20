@@ -7,11 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Peças</title>
   <link rel="shortcut icon" href="./assets/logo site.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="pecas.css">
 </head>
 
 <body>
   <header>
-    <div>
+    <div class="topo">
       <a href="index.html"><img src="/assets/logo site.png" /></a>
       <nav>
         <a href="/index.html">Página Inicial</a>
@@ -19,93 +25,139 @@
         <a href="/local.html">Local</a>
       </nav>
     </div>
-    <img src="./assets/Você & Eu (7).png" alt="fotoadoreu" />
+    <img class="banner" src="./assets/Você & Eu (7).png" alt="fotoadoreu" />
   </header>
 
   <main>
-    <section>
+    <section class="pecas" id="btnPecas">
       <h1>Nossas peças que estarão na Feirinha Adoreu ♥</h1>
       <nav>
         <ul>
           <li>
-            <a href="#"> Meia Taça Sophie </a>
+            <a href="#" class="itemClicado" data-destino="destino1">Meia Taça Sophie </a>
           </li>
           <li>
-            <a href="#"> Meia Taça Aurora</a>
-
+            <a href="#" class="itemClicado" data-destino="destino2">Meia Taça Aurora</a>
           </li>
           <li>
-            <a href="#"> Meia Taça Florie</a>
+            <a href="#" class="itemClicado" data-destino="destino3">Meia Taça Florie</a>
           </li>
           <li>
-            <a href="#"> Top Ella</a>
+            <a href="#" class="itemClicado" data-destino="destino4">Top Ella</a>
           </li>
           <li>
-            <a href="#"> Top Lua</a>
+            <a href="#" class="itemClicado" data-destino="destino5">Top Lua</a>
           </li>
           <li>
-            <a href="#"> Meia Taça Helena</a>
+            <a href="#" class="itemClicado" data-destino="destino6">Meia Taça Helena</a>
           </li>
           <li>
-            <a href="#"> Top Maya
+            <a href="#" class="itemClicado" data-destino="destino7">Top Maya</a>
           </li>
           <li>
-            <a href="#"> Top Anne</a>
+            <a href="#" class="itemClicado" data-destino="destino8">Top Anne</a>
           </li>
         </ul>
       </nav>
     </section>
 
-    <section>
-      <h2>Meia Taça Sophie</h2>
-      <img src="./assets/lingerie.PNG" alt="sutia sophie" />
-      <p>Top de tule super delicado!!!</p>
-      <p>Tecido de tule, com aro, fecho e elástico.</p>
-    </section>
-    <section>
-      <h2>Meia Taça Aurora</h2>
-      <img src="./assets/aurora.PNG" alt="sutia aurora" />
-      <p>Essa é Meia Taça é super apaixonante!!</p>
-      <p>Tecido de renda, com aro, fecho e elástico.</p>
-    </section>
-    <section>
-      <h2>Meia Taça Florie</h2>
-      <img src="./assets/florie.PNG" alt="sutia florie" />
-      <p>Meia taça Florie super sexy!!!</p>
-      <p>Tecido de renda, com aro, fecho e elástico.</p>
-    </section>
-    <section>
-      <h2>Top Ella</h2>
-      <img src="./assets/ella.png" alt="suatia ella" />
-      <p>Top Ella super confortável!!!</p>
-      <p>Tecido de renda, elástico de sustentação, forro de algodão e sem fecho.</p>
-    </section>
-    <section>
-      <h2>Top Lua</h2>
-      <img src="./assets/lua.PNG" alt="suatia lua" />
-      <p>Super sustentação!!!</p>
-      <p>Tecido de renda, elástico de sustentação, forro de algodão e com fecho.</p>
-    </section>
-    <section>
-      <h2>Meia taça Helena</h2>
-      <img src="./assets/helena.PNG" alt="suatia helena" />
-      <p>Meia taça Helena super fofo!!</p>
-      <p>Tecido de renda, elástico de sustentação, forro de algodão, aro e fecho.</p>
-    </section>
-    <section>
-      <h2>Top Maya</h2>
-      <img src="./assets/maya.PNG" alt="suatia maya" />
-      <p>Top Maya bicolor!!!</p>
-      <p>Tecido de renda, elástico de sustentação, forro de algodão e sem fecho.</p>
-    </section>
-    <section>
-      <h2>Top Anne</h2>
-      <img src="./assets/anne.PNG" alt="suatia anne" />
-      <p>Top Anne Off White!!!</p>
-      <p>Tecido de renda, elástico de sustentação, forro de algodão e sem fecho.</p>
+    <section class="pecas-section">
+      <div class="peca branco"  id="destino1">
+        <h2>Meia Taça Sophie</h2>
+        <div class="peca-contexto">
+          <img src="./assets/lingerie.PNG" alt="sutiã sophie" />
+          <div class="peca-texto">
+            <p>Top com o tecido tule, é super delicado!!!</p>
+            <p>Tecido de tule, com aro, fecho e elástico.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="peca vermelho" id="destino2">
+        <h2>Meia Taça Aurora</h2>
+        <div class="peca-contexto">
+          <img src="./assets/aurora.PNG" alt="sutiã aurora" />
+          <div class="peca-texto">
+            <p>Meia Taça é super apaixonante!!</p>
+            <p>Tecido de renda, com aro, fecho e elástico.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="peca branco" id="destino3">
+        <h2>Meia Taça Florie</h2>
+        <div class="peca-contexto">
+          <img src="./assets/florie.PNG" alt="sutiã florie" />
+          <div class="peca-texto">
+            <p>Meia taça Florie super sexy!!!</p>
+            <p>Tecido de renda, com aro, fecho e elástico.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="peca vermelho" id="destino4">
+        <h2>Top Ella</h2>
+        <div class="peca-contexto">
+          <img src="./assets/ella.png" alt="sutiã ella" />
+          <div class="peca-texto">
+            <p>Top Ella, super confortável!!!</p>
+            <p>Tecido de renda, elástico de sustentação, <br /> forro de algodão e sem fecho.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="peca branco" id="destino5">
+        <h2>Top Lua</h2>
+        <div class="peca-contexto">
+          <img src="./assets/lua.PNG" alt="sutia lua" />
+          <div class="peca-texto">
+            <p>Super sustentação!!!</p>
+            <p>Tecido de renda, elástico de sustentação, <br /> forro de algodão e com fecho.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="peca vermelho" id="destino6">
+        <h2>Meia taça Helena</h2>
+        <div class="peca-contexto">
+          <img src="./assets/helena.PNG" alt="sutiã helena" />
+          <div class="peca-texto">
+            <p>Meia taça Helena, super fofo!!</p>
+            <p>Tecido de renda, elástico de sustentação, <br /> forro de algodão, aro e fecho.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="peca branco" id="destino7">
+        <h2>Top Maya</h2>
+        <div class="peca-contexto">
+          <img src="./assets/maya.PNG" alt="sutiã maya" />
+          <div class="peca-texto">
+            <p>Top Maya bicolor!!!</p>
+            <p>Tecido de renda,elástico de sustentação, <br /> forro de algodão e sem fecho.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="peca vermelho" id="destino8">
+        <h2>Top Anne</h2>
+        <div class="peca-contexto">
+          <img src="./assets/anne.PNG" alt="sutiã anne" />
+          <div class="peca-texto">
+            <p>Top Anne Off White!!!</p>
+            <p>Tecido de renda, elástico de sustentação, <br /> forro de algodão e sem fecho.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#pecas"><button id="btnTopo"></a>
+        <ion-icon id="seta" name="arrow-dropup-circle"></ion-icon>
+      </div>
     </section>
   </main>
   <footer> Feito com ♥ pela Paloma</footer>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="script.js"></script>
 
 </body>
 
